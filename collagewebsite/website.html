@@ -1,0 +1,954 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+   <!-- Required meta tags -->
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+   <!-- Bootstrap CSS -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <title>Madan Mohan Malviya Collage Website</title>
+   <style>
+      .logo-section {
+         background-color: #fff;
+      }
+
+      @media (max-width:578px) {
+         .logo-image-1{
+            height: 80px;
+            width: 200px;
+         }
+         
+      }
+      
+      .header-top {
+         background-color: rgb(116, 5, 5);
+      }
+
+      .nav-link {
+         color: #fff !important;
+      }
+
+      .nav-link:hover {
+         color: black !important;
+      }
+
+      #sbmt:hover {
+         color: blue;
+      }
+
+      .homepage {
+         background-color: lightgray;
+         padding-bottom: 30px;
+      }
+
+      .faculty-section {
+         background-color: #fff;
+         border-radius: 15px;
+      }
+
+      .schedule-program {
+         background-color: #fff;
+         border-radius: 15px;
+      }
+
+      .about-section {
+         background-color: #fff;
+         border-radius: 8px;
+         height: 500px;
+      }
+
+      .update {
+         background-color: #fff;
+         /* margin-left: 20px; */
+      }
+
+      .latest-update {
+         background-color: rgb(116, 5, 5);
+         color: #fff;
+         padding: 15px;
+      }
+
+      .proposed-outcome {
+         background-color: #fff;
+         border-radius: 10px;
+         padding-bottom: 20px;
+      }
+
+      .text-content {
+         /* margin-left: 35px; */
+         font-size: 18px;
+         /* font-style:oblique; */
+         font-family: bold;
+      }
+
+      .schedule-section {
+         background-color: #fff;
+         border-radius: 10px;
+      }
+
+      .general-guid {
+         background-color: #fff;
+         border-radius: 10px;
+         padding-bottom: 20px;
+      }
+
+      .theme-box {
+         background-color: #fff;
+         border-radius: 10px;
+
+      }
+
+      .orientation {
+         background-color: pink;
+         padding: 20px;
+         border-radius: 10px;
+         height: 250px;
+         transition:  0.5s ease-in-out;         
+      }
+
+      a {
+         text-decoration: none;
+         color: rgb(129, 74, 3);
+      }
+      .anchor-tag{
+         margin-top: 20px !important;
+      }
+      .orientation:hover {
+         transform:translateY(-10px);
+      }
+
+      .icn-2 {
+         background-color: rgb(172, 104, 14);
+         padding: 20px;
+         border-radius: 10px;
+         height: 250px;
+         transition:  0.5s ease-in-out;        
+      }
+      .icn-2:hover{
+         transform:translateY(-10px); 
+      }
+
+      .icn-3 {
+         background-color: rgb(172, 246, 83);
+         padding: 20px;
+         border-radius: 10px;
+         height: 250px;
+         transition:  0.5s ease-in-out;
+      }
+      .icn-3:hover{
+         transform:translateY(-10px); 
+      }
+
+      .icn-4 {
+         background-color: rgb(96, 181, 230);
+         padding: 20px;
+         border-radius: 10px;
+         height: 250px;
+         transition:  0.5s ease-in-out;
+      }
+      .icn-4:hover{
+         transform:translateY(-10px); 
+      }
+      .icn-5{
+         background-color: rgb(165, 140, 234);
+         padding: 20px;
+         border-radius: 10px;
+         height: 250px;
+         transition:  0.5s ease-in-out;
+      }
+      .icn-5:hover{
+         transform:translateY(-10px); 
+      }
+      .icn-6{
+         background-color:pink;
+         padding: 20px;
+         border-radius: 10px;
+         height: 250px;
+         transition:  0.5s ease-in-out;
+      }
+      .icn-6:hover{
+         transform:translateY(-10px); 
+      }
+      .icn-7{
+         background-color: rgb(96, 181, 230);
+         padding: 20px;
+         border-radius: 10px;
+         height: 250px;
+         transition:  0.5s ease-in-out;
+      }
+      .icn-7:hover{
+         transform:translateY(-10px); 
+      }
+      .icn-8{
+         background-color: rgb(230, 104, 182);
+         padding: 20px;
+         border-radius: 10px;
+         height: 250px;
+         transition:  0.5s ease-in-out;
+      }
+      .icn-8:hover{
+         transform:translateY(-10px); 
+      }
+      .image-1{
+       margin-bottom: 10px; 
+       padding: 10px;
+       border-radius: 50px; 
+       background-color: #fff;
+       transition:  0.5s ease-in-out;
+      }
+      .image-1:hover{
+         transform:translateY(-10px); 
+         background-color: rgb(174, 160, 6);
+      }
+      .image-2{
+       margin-bottom: 10px; 
+       padding: 10px;
+       border-radius: 50px; 
+       background-color: #fff;
+       transition:  0.5s ease-in-out;
+      }
+      .image-2:hover{
+         transform:translateY(-10px); 
+         background-color: rgb(174, 160, 6);
+      }
+      .image-3{
+       margin-bottom: 10px; 
+       padding: 10px;
+       border-radius: 50px; 
+       background-color: #fff;
+       transition:  0.5s ease-in-out;
+      }
+      .image-3:hover{
+         transform:translateY(-10px); 
+         background-color: rgb(174, 160, 6);
+      }
+      .image-4{
+       margin-bottom: 10px; 
+       padding: 10px;
+       border-radius: 50px; 
+       background-color: #fff;
+       transition:  0.5s ease-in-out;
+      }
+      .image-4:hover{
+         transform:translateY(-10px); 
+         background-color: rgb(250, 69, 211);
+      }
+      .image-5{
+       margin-bottom: 10px; 
+       padding: 10px;
+       border-radius: 50px; 
+       background-color: #fff;
+       transition:  0.5s ease-in-out;
+      }
+      .image-5:hover{
+         transform:translateY(-10px); 
+         background-color: rgb(174, 160, 6);
+      }
+      .image-6{
+       margin-bottom: 10px; 
+       padding: 10px;
+       border-radius: 50px; 
+       background-color: #fff;
+       transition:  0.5s ease-in-out;
+      }
+      .image-6:hover{
+         transform:translateY(-10px); 
+         background-color: rgb(174, 160, 6);
+      }
+      .image-7{
+       margin-bottom: 10px; 
+       padding: 10px;
+       border-radius: 50px; 
+       background-color: #fff;
+       transition:  0.5s ease-in-out;
+      }
+      .image-7:hover{
+         transform:translateY(-10px); 
+         background-color: rgb(14, 224, 74);
+      }
+      .image-8{
+       margin-bottom: 10px; 
+       padding: 10px;
+       border-radius: 50px; 
+       background-color: #fff;
+       transition:  0.5s ease-in-out;
+      }
+      .image-8:hover{
+         transform:translateY(-10px); 
+         background-color: rgb(6, 6, 174);
+      }
+      .gallery-section{
+         background-color: #fff;
+         border-radius: 10px;
+         padding-bottom: 20px;
+      }
+      .digital-ini{
+         background-color: #fff;
+         border-radius: 10px;
+         padding-bottom: 35px;
+      }
+      .img-1{
+         box-shadow: 1px 2px 8px 2px lightgray;
+         border-radius: 8px;
+         margin-left: 20px;
+         transition: 0.5s;
+      }
+      .img-1:hover{
+         box-shadow: none;
+         transform:scale(1.2,1.2);
+      }
+      .img-2{
+         box-shadow: 1px 2px 8px 2px lightgray;
+         border-radius: 8px;
+         margin-left: 20px;
+         transition: 0.5s;
+      }
+      .img-2:hover{
+         box-shadow: none;
+         transform:scale(1.2,1.2);
+      }
+      .img-3{
+         box-shadow: 1px 2px 8px 2px lightgray;
+         border-radius: 8px;
+         margin-left: 20px;
+         transition: 0.5s;
+      }
+      .img-3:hover{
+         box-shadow: none;
+         transform:scale(1.2,1.2);
+      }
+      .img-4{
+         box-shadow: 1px 2px 8px 2px lightgray;
+         border-radius: 8px;
+         margin-left: 20px;
+         transition: 0.5s;
+      }
+      .img-4:hover{
+         box-shadow: none;
+         transform:scale(1.2,1.2);
+      }
+      .img-5{
+         box-shadow: 1px 2px 8px 2px lightgray;
+         border-radius: 8px;
+         margin-left: 20px;
+         transition: 0.5s;
+      }
+      .img-5:hover{
+         box-shadow: none;
+         transform:scale(1.2,1.2);
+      }
+      .img-6{
+         box-shadow: 1px 2px 8px 2px lightgray;
+         border-radius: 8px;
+         margin-left: 20px;
+         transition: 0.5s;
+      }
+      .img-6:hover{
+         box-shadow: none;
+         transform:scale(1.2,1.2);
+      }
+      .img-7{
+         box-shadow: 1px 2px 8px 2px lightgray;
+         border-radius: 8px;
+         margin-left: 20px;
+         transition: 0.5s;
+      }
+      .img-7:hover{
+         box-shadow: none;
+         transform:scale(1.2,1.2);
+      }
+      .img-8{
+         box-shadow: 1px 2px 8px 2px lightgray;
+         border-radius: 8px;
+         margin-left: 20px;
+         transition: 0.5s;
+      }
+      .img-8:hover{
+         box-shadow: none;
+         transform:scale(1.2,1.2);
+      }
+      .img-9{
+         box-shadow: 1px 2px 8px 2px lightgray;
+         border-radius: 8px;
+         margin-left: 20px;
+         transition: 0.5s;
+      }
+      .img-9:hover{
+         box-shadow: none;
+         transform:scale(1.2,1.2);
+      }
+      .img-10{
+         box-shadow: 1px 2px 8px 2px lightgray;
+         border-radius: 8px;
+         margin-left: 20px;
+         transition: 0.5s;
+      }
+      .img-10:hover{
+         box-shadow: none;
+         transform:scale(1.2,1.2);
+      }
+      .footer-section{
+         background-color: rgb(1, 1, 26);
+         padding: 50px;
+      }
+      .footer-content{
+         color: lightgrey;
+      }
+      .footer-content-1{
+         color: lightgrey;
+      }
+      .footer-content-2{
+         color: lightgrey;
+      }
+      .down-line{
+         width: 100%;
+         height: 1.2px;
+         background-color: white;
+         margin-top: 40px;
+         margin-bottom: 40px;
+      }
+      
+   </style>
+</head>
+
+<body>
+   <section class="logo-section">
+      <div class="container">
+         <div class="row">
+            <div class="col-md-4 col-4 mt-3">
+               <img src="img/mmcisdcmoblogo1.png" class="logo-image-1" height="100px" width="100%">
+            </div>
+            <div class="col-md-4 col-4 mt-3"></div>
+            <div class="col-md-4 col-4 mt-3">
+               <img src="img/ugclogo2.png" class="logo-image-1" height="100px" width="100%">
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <nav class="navbar navbar-expand-lg header-top">
+      <div class="container-fluid">
+         <a class="navbar-brand" href="#"></a>
+         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+               <li class="nav-item px-3">
+                  <a class="nav-link" aria-current="page" href="#">Home</a>
+               </li>
+               <li class="nav-item px-3">
+                  <a class="nav-link" href="#">About The Scheme</a>
+               </li>
+               <li class="nav-item px-3">
+                  <a class="nav-link" href="#">Administration</a>
+               </li>
+               <li class="nav-item px-3">
+                  <a class="nav-link" href="#">Brochure</a>
+               </li>
+               <li class="nav-item px-3">
+                  <a class="nav-link" href="#">Gallery</a>
+               </li>
+               <li class="nav-item px-3">
+                  <a class="nav-link" href="#">Contact</a>
+               </li>
+               <li class="nav-item-ragistration px-3">
+                  <button class="btn btn-warning" id="sbmt" type="submit">Registration</button>
+               </li>
+
+            </ul>
+             
+         </div>
+      </div>
+   </nav>
+
+   <!-- homepage -->
+
+   <section class="homepage">
+      <div class="container-fluid">
+         <div class="row mx-3">
+            <img src="img/fdclogo-home.png"
+               style="margin-top: 25px; border-radius: 15px; padding: 20px;background-color: #fff;">
+         </div>
+      </div>
+
+      <!-- faculty section -->
+      <section class="faculty-section mx-4">
+      <div class="container">
+         <div class="row mt-4 mx-5 justify-content-around">
+            <div class="col-md-4 col-sm-8 col-12  mt-4 mb-4">
+               <img src="img/faculty-img1.jpg" alt="" height="Auto" width="100%">
+               <h5>Prof. Sangita Srivastava</h5>
+               <h6><span style="color: rgb(104, 3, 3);">Hon'ble Vice-Chancellor</span></h6>
+               <h6>University of Allahabad</h6>
+            </div>
+            <div class="col-md-4 col-sm-8 col-12 mt-4 mb-4">
+               <img src="img/faculty-img2.jpg" alt="" height="auto" width="100%">
+               <h5>Shri Ajay Shankar (IAS)</h5>
+               <h6><span style="color: rgb(104, 3, 3);">Chairman, Governing Body</span></h6>
+               <h6>ISPG College</h6>
+            </div>
+            <div class="col-md-4 col-sm-8 col-12 mt-4 mb-4">
+               <img src="img/faculty-img3.jpg" alt="" height="auto" width="100%">
+               <h5>Prof. Anand Shanker Singh</h5>
+               <h6><span style="color: rgb(104, 3, 3);">Director, UGC- MMTTC</span></h6>
+               <h6>Principal, ISPG College</h6>
+            </div>
+         </div>
+      </div>
+   </section>
+
+      <!-- tentative schedule of the program -->
+       <section class="schedule-program mx-4 pb-4">
+      <div class="container">
+         <div class="row mt-4">
+            <h2 class="text-center my-4"> <span style="color: rgb(88, 3, 3);">Tentative Schedule of the Programme</span>
+            </h2>
+            <table class="table table-bordered">
+               <thead>
+                  <tr>
+                     <th scope="col">Sr No</th>
+                     <th scope="col">Training Program ID</th>
+                     <th scope="col">From date</th>
+                     <th scope="col">To date</th>
+                     <th scope="col">Converner</th>
+                     <th scope="col">Action</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <th scope="row">1</th>
+                     <td>MMC-100-2023-NOV-B-00399</td>
+                     <td>21-11-2023</td>
+                     <td>30-11-2023</td>
+                     <td>Dr. Avinash Pandey <br> +91 8318327406</td>
+                     <td><button type="button" class="btn btn-danger">Completed</button>
+                        <button type="button" class="btn btn-warning">Brochure</button>
+                     </td>
+                  </tr>
+
+                  <tr>
+                     <th scope="row">2</th>
+                     <td>MMC-100-2023-NOV-B-00399</td>
+                     <td>21-11-2023</td>
+                     <td>30-11-2023</td>
+                     <td>Dr. Avinash Pandey<br> +91 8318327406</td>
+                     <td><button type="button" class="btn btn-danger">Completed</button>
+                        <button type="button" class="btn btn-warning">Brochure</button>
+                     </td>
+                  </tr>
+
+                  <tr>
+                     <th scope="row">3</th>
+                     <td>MMC-100-2023-NOV-B-00399</td>
+                     <td>21-11-2023</td>
+                     <td>30-11-2023</td>
+                     <td>Dr. Avinash Pandey<br> +91 8318327406</td>
+                     <td><button type="button" class="btn btn-danger">Completed</button>
+                        <button type="button" class="btn btn-warning">Brochure</button>
+                     </td>
+                  </tr>
+
+                  <tr>
+                     <th scope="row">4</th>
+                     <td>MMC-100-2024-JAN-A-00402</td>
+                     <td>04-01-2024</td>
+                     <td>17-01-2024</td>
+                     <td>DR. SHIV JI VERMA
+                        <br> +91 8318327406
+                     </td>
+                     <td><button type="button" class="btn btn-primary">On Going</button>
+                        <button type="button" class="btn btn-warning">Brochure</button>
+                     </td>
+                  </tr>
+
+                  <tr>
+                     <th scope="row">5</th>
+                     <td>MMC-100-2023-NOV-B-00399</td>
+                     <td>21-11-2023</td>
+                     <td>30-11-2023</td>
+                     <td>Dr. Avinash Pandey<br> +91 8318327406</td>
+                     <td><button type="button" class="btn btn-primary">Completed</button>
+                        <button type="button" class="btn btn-warning">Brochure</button>
+                     </td>
+                  </tr>
+
+                  <tr>
+                     <th scope="row">6</th>
+                     <td>MMC-100-2023-NOV-B-00399</td>
+                     <td>21-11-2023</td>
+                     <td>30-11-2023</td>
+                     <td> # </td>
+                     <td><button type="button" class="btn btn-primary">Completed</button>
+                        <button type="button" class="btn btn-warning">Brochure</button>
+                     </td>
+                  </tr>
+
+                  <tr>
+                     <th scope="row">7</th>
+                     <td>MMC-100-2023-NOV-B-00399</td>
+                     <td>21-11-2023</td>
+                     <td>30-11-2023</td>
+                     <td> # </td>
+                     <td><button type="button" class="btn btn-primary">Completed</button>
+                        <button type="button" class="btn btn-warning">Brochure</button>
+                     </td>
+                  </tr>
+
+                  <tr>
+                     <th scope="row">8</th>
+                     <td>MMC-100-2023-NOV-B-00399</td>
+                     <td>21-11-2023</td>
+                     <td>30-11-2023</td>
+                     <td> # </td>
+                     <td><button type="button" class="btn btn-danger">Completed</button>
+                        <button type="button" class="btn btn-warning">Brochure</button>
+                     </td>
+                  </tr>
+
+               </tbody>
+            </table>
+         </div>
+      </div>
+   </section>
+
+      <!-- about the program -->
+       <section class="about-program mx-4">
+      <div class="container-fluid">
+         <div class="row  justify-content-around mt-4">
+            <div class="col-md-7 col-12 about-section">
+               <h3 class="text-start mt-4 mb-4"><span style="color: rgb(100, 8, 8);">About the Programme</span></h3>
+               <p>The NEP orientation & sensitization programme will be conducted by 111 MMTT Centres in fully online
+                  mode
+                  with the target of 15 lakh faculty members over the period of three years (2023-24 to 2025-26). This
+                  Programme will be delivered through 111 MMTT Centres. Two programmes will be conducted in a month
+                  catering 200 participants.
+                  The motive of the programme is to sensitize and orient the participants to these 8 themes. On the
+                  completion of the programme,
+                  faculty members would receive the certificate.</p>
+            </div>
+            <div class="col-md-4 col-12 update">
+               <h5 class="latest-update">Latest Update</h5>
+            </div>
+         </div>
+      </div>
+   </section>
+
+      <!-- Proposed Outcome of the Programme -->
+   <section class="proposed-outcome mx-4">
+      <div class="container">
+         <div class="row mt-4">
+            <h3 class="text-center mt-3 mb-4"><span style="color: rgb(100, 8, 8);">Proposed Outcome of the
+                  Programme</span></h3>
+             <div class="purpose-section mx-1">
+            <ul class="text-content">
+               <li type="disc">Faculty members will get trained to impart holistic education,
+                  imbibing the ideals of India-centric ethics and human values.</li>
+               <li type="disc">
+                  Teachers and Learners will acquire
+                  the concept of the Indian Knowledge System to apply it in real life for the
+                  advancement and creation of knowledge.
+               </li>
+            
+               <li type="disc">
+                  Teachers and Learners will acquire
+                  the concept of the Indian Knowledge System to apply it in real life for the
+                  advancement and creation of knowledge.
+               </li>
+            
+               <li type="disc">
+                  The learners would be able to generate new ideas/materials with
+                  a multidisciplinary and cross-disciplinary thinking approach.
+
+               </li>
+            
+               <li type="disc">
+                  The learners will develop an inclination towards conducting quality research, 
+                  to solve local, national, and global problems through innovation and entrepreneurial skills.
+               </li>
+         
+               <li type="disc">
+                  The learners would become reflective practitioners.
+               </li>
+               <li type="disc">The learners will develop the capacity to integrate ICT tools into the learning process.
+               </li>
+               <li type="disc">
+                  The learners will realize their role in institution building.
+               </li>
+            </ul>
+            </div>
+         </div>
+      </div>
+   </section>
+
+      <!-- schedule of the program -->
+   <section class="schedule-section mx-4">
+      <div class="container">
+         <div class="row mt-4">
+            <h3 class="text-center mt-3 mb-4"><span style="color: rgb(100, 8, 8);">Schedule of the Programme</span></h3>
+            <p class="text-center" style="font-family: bold;font-size: 18px;">The NEP orientation and sensitization
+               programme will be an eight day programme, with two live online sessions of 90 minutes each based on the
+               eight NEP-2020 themes starting from Monday to Friday (Week 1) and Monday to Wednesday (Week 2).
+               MCQs will have to be completed by the Saturday of each week which will comprise 5 questions related to
+               themes.</p>
+
+         </div>
+      </div>
+   </section>
+
+      <!-- General guidlines for participant -->
+      <section class="general-guid mx-4">
+      <div class="container">
+         <div class="row mt-4">
+            <h3 class="text-center mt-3 mb-4"><span style="color: rgb(100, 8, 8);">General Guidelines for
+                  Participants</span></h3>
+            <div class="genral mx-1">
+            <ul class="text-content">
+               <li type="disc">All the programmes organised by UGC-MMTT Centre, Iswar Saran PG College, Prayagraj
+                   would be conducted under the aegis and guidance of Ministry of Education, Govt. of India.</li>
+            
+               <li type="disc">
+                  All the programmes conducted by UGC-MMTT Centre would be monitored on 'Real Time' basis.
+               </li>
+               <li type="disc">
+                  This UGC MMTT Programme would be conducted in 8 days having 16 sessions (90 minute each). It would be mandatory to join each session of the programme.presence of each participant would be 
+                  monitored by the centre as well as secured by UGC Portal through the medium of Auto Capture.
+               </li>
+               <li type="disc">
+                  Candidates should login on Google MEET during the session by their respective 
+                  names as filled on UGC registration portal of training programme for attendance purpose.
+               </li>
+               <li type="disc">
+                  The presence of Participants is mandatory in all the sessions (Attendance is compulsory for all the sessions) of the programme. If any participant fail to join any session, they would obtain 
+                  the certificate of the programme only when they complete the particular missed out theme 
+                  session in some other programme and inform the Director of the Centre with proper evidence.
+               </li>
+               <li type="disc">
+                  The Profile has to updated by uploading participant's photo,
+                   NOC Certificate and college ID. In case of non compliance, certificate would not be issued.
+               </li>
+               <li type="disc">
+                  Participants are expected to successfully complete all the tasks/assignments assigned to them learning the programme.
+               </li>
+               <li type="disc">
+                  Assessment of the participants would be done on the basis of multiple choice questions which would be conducted on the last 
+                  day of the programme and its mandatory for all the participants to successfully complete it.
+               </li>
+               <li type="disc">
+                  Participants are expected to fill the feedback form which would be provided by the Centre after the successful completion of the programme.
+               </li>
+               <li type="disc">
+                  An E-Certificate would be issued only to the participants who have successfully participated in the programme, 
+                  completed all the assignments, passed the assessment and filled the feedback form.
+               </li>
+               <li type="disc">
+                  An E-Certificate would be issued only to the participants who have successfully participated in the programme,
+                   completed all the assignments, passed the assessment and filled the feedback form.
+               </li>
+               <li type="disc">
+                  Participants from all over India are expected to join this programme. Therefore, it is expected from the participants to strictly adhere to the guidelines given by the centre and
+                   the programme Convener and peacefully cooperate in the successful completion of the programme.
+               </li>
+               <li type="disc">
+                  For any other relevant information kindly contact Dr. Manoj Kumar Dubey, Assistant Director, UGC-MMTTC E-mail : ad.mmcispgc@isdc.ac.in
+               </li>
+            </ul>
+         </div>
+         </div>
+      </div>
+      </section>
+
+      <!-- NEP Orientation Programme Themes -->
+      <section class="theme-box mx-4">
+         <div class="container">
+            <div class="row mx-3 mt-4 justify-content-around">
+               <h3 class="text-center mt-3 mb-4"><span style="color: rgb(100, 8, 8);">NEP Orientation Programme
+                     Themes</span></h3>
+               <div class="col-md-3 col-sm-6 col-12">
+                  <div class="orientation text-center my-4">
+                     <img src="img/icon1.png" class="image-1">
+                     <h6 class="text-center">Academic Leadership, Governance, and Management</h6>
+                     <a href="#" class="anchor-tag">Read More...</a>
+                  </div>
+               </div>
+               <div class="col-md-3 col-sm-6 col-12">
+                  <div class="icn-2 text-center my-4">
+                     <img src="img/icon2.png" class="image-2">
+                     <h6 class="text-center">Holistic and Multidisciplinary Education</h6>
+                     <a href="#">Read More...</a>
+                  </div>
+               </div>
+               <div class="col-md-3 col-sm-6 col-12">
+                  <div class="icn-3 text-center my-4">
+                     <img src="img/icon3.png" class="image-3">
+                     <h6 class="text-center">Higher Education and Society</h6>
+                     <a href="#">Read More...</a>
+                  </div>
+               </div>
+               <div class="col-md-3 col-sm-6 col-12">
+                  <div class="icn-4 text-center my-4">
+                     <img src="img/icon4.png" class="image-4">
+                     <h6 class="text-center">Indian Knowledge System</h6>
+                     <a href="#">Read More...</a>
+                  </div>
+               </div>
+
+               <div class="col-md-3 col-sm-6 col-12">
+                  <div class="icn-5 text-center my-4">
+                     <img src="img/icon5.png" class="image-5">
+                     <h6 class="text-center">Information and Communication Technology</h6>
+                     <a href="#">Read More...</a>
+                  </div>
+               </div>
+
+               <div class="col-md-3 col-sm-6 col-12">
+                  <div class="icn-6 text-center my-4">
+                     <img src="img/icon6.png" class="image-6">
+                     <h6 class="text-center">Research and Development</h6>
+                     <a href="#">Read More...</a>
+                  </div>
+               </div>
+
+               <div class="col-md-3 col-sm-6 col-12">
+                  <div class="icn-7 text-center my-4">
+                     <img src="img/icon7.png" class="image-7">
+                     <h6 class="text-center">Skill Development</h6>
+                     <a href="#">Read More...</a>
+                  </div>
+               </div>
+
+               <div class="col-md-3 col-sm-6 col-12">
+                  <div class="icn-8 text-center my-4">
+                     <img src="img/icon8.png" class="image-8">
+                     <h6 class="text-center">Student Diversity and Inclusive Education
+                     </h6>
+                     <a href="#">Read More...</a>
+                  </div>
+               </div>
+
+
+            </div>
+         </div>
+      </section>
+     
+      <!-- Gallery -->
+      <section class="gallery-section mx-4 mt-4">
+         <div class="container">
+            <div class="row">
+               <h3 class="text-center mt-4 mb-4"><span style="color: rgb(100, 8, 8);">Gallery</span></h3>
+            </div>
+         </div>
+      </section>
+
+      <!-- Digital Initiatives -->
+
+      <section class="digital-ini mx-4 mt-4">
+         <div class="container">
+            <div class="row mt-4">
+               <h3 class="text-center mt-4 mb-4"><span style="color: rgb(100, 8, 8);">Digital Initiatives</span></h3>
+                <marquee onmouseover="this.stop(1);" onmouseout="this.start(1);" direction="left"> 
+                  <img src="img/initiative-img1.jpg" class="img-1" height="80px" width="160px">
+                  <img src="img/initiative-img2.jpg" class="img-2" height="80px" width="160px">
+                  <img src="img/initiative-img3.jpg"  class="img-3" height="80px" width="160px">
+                  <img src="img/initiative-img4.jpg" class="img-4" height="80" width="160px">
+                  <img src="img/initiative-img5.jpg" class="img-5" height="80" width="160px">
+                  <img src="img/initiative-img6.jpg" class="img-6" height="80" width="160px">
+                  <img src="img/initiative-img7.jpg" class="img-7" height="80" width="160px">
+                  <img src="img/initiative-img9.jpg" class="img-8" height="80" width="160px">
+                  <img src="img/initiative-img10.jpg" class="img-9" height="80" width="160px">
+                  <img src="img/initiative-img11.jpg" class="img-10" height="80" width="160px">
+                </marquee>
+            </div>
+         </div>
+      </section>
+
+   </section>
+
+   <section class="footer-section">
+      <div class="container-fluid">
+         <div class="row mx-3">
+           <div class="col-md-3 col-sm-6 col-12 mt-5">
+            <h5 class="text-start text-white">Get in Touch</h5>
+            <div class="footer-content mt-3">
+               <p><i class="fa-solid fa-location-dot" style="color: rgb(136, 4, 4);"></i>
+                  Salori- Govindpur Road, Prayagraj, UP, India 211004</p>
+               <p><i class="fa-solid fa-phone" style="color: rgb(136, 4, 4);"></i>
+                        +91-xx00000000
+               </p>
+               <p><i class="fa-solid fa-message" style="color: rgb(136, 4, 4);"></i>
+                  mmttc[dot]ispgc[dot]isdc.ac.in
+               </p>
+            </div>
+           </div>
+           <div class="col-md-3 col-sm-6 col-12 mt-5">
+            <h5 class="text-start text-white">Quick Links</h5>
+             <div class="footer-content-1 mt-3">
+               <p><i class="fa-solid fa-arrow-right-arrow-left"  style="color: rgb(136, 4, 4);"></i>
+                Home
+               </p>
+               <p><i class="fa-solid fa-arrow-right-arrow-left"  style="color:  rgb(136, 4, 4);"></i>
+                  Gallery
+               </p>
+               <p><i class="fa-solid fa-arrow-right-arrow-left"  style="color:  rgb(136, 4, 4);"></i>
+                  Contact Us
+               </p>
+             </div>
+           </div>
+           <div class="col-md-3 col-sm-6 col-12 mt-5">
+            <h5 class="text-start text-white">Usefull links</h5>
+            <div class="footer-content-2 mt-3">
+               <p><i class="fa-solid fa-arrow-right-arrow-left"  style="color: rgb(136, 4, 4);"></i>
+                  Terms & Condition
+               </p>
+               <p><i class="fa-solid fa-arrow-right-arrow-left"  style="color: rgb(136, 4, 4);"></i>
+                  privacy Policy
+               </p>
+            </div>
+           </div>
+           <div class="col-md-3 col-sm-6 col-12 mt-5">
+            <h5 class="text-start text-white">Social Media</h5>
+            <div class="footer-icn mt-3">
+                  <i class="fa-brands fa-facebook" style="color: white; padding: 15px; background-color: rgb(103, 90, 90);border-radius: 50%;"></i>
+                  <i class="fa-brands fa-instagram" style="color: white;padding: 15px; background-color: rgb(103, 90, 90);border-radius: 50%;"></i>
+                  <i class="fa-brands fa-youtube" style="color: white;padding: 15px; background-color: rgb(103, 90, 90);border-radius: 50%;"></i>
+            </div>
+           </div>
+           <div class="down-line d-flex align-items-center justify-content-center">
+            <i class="fa-solid fa-arrow-up" style="color: white; padding: 15px; background-color: rgb(109, 5, 5);border-radius: 50%;"></i>
+           </div>
+
+           <p class="text-white">Copyright © 2024 All Rights Reserved. ISWAR SARAN DEGREE College | Digitalize By A.I.M.S [Westonik]</p>
+
+         </div>
+
+      </div>
+   </section>
+
+
+
+
+   <!-- Optional JavaScript; choose one of the two! -->
+
+   <!-- Option 1: Bootstrap Bundle with Popper -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"></script>
+
+   <!-- Option 2: Separate Popper and Bootstrap JS -->
+
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"></script>
+
+</body>
+
+</html>
